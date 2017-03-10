@@ -1,0 +1,7 @@
+/HPC-Runner-Command-Utils-ManyConfigs-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
+/.prove
