@@ -7,6 +7,9 @@ HPC::Runner::Command::Utils::ManyConfigs - Load many layered configs
     use Moose;
     with 'HPC::Runner::Command::Utils::ManyConfigs';
 
+    #Specify search_paths with --search_path
+    #Specify config base with --config_base
+
 # DESCRIPTION
 
 HPC::Runner::Command::Utils::ManyConfigs are just some helper utilities to make it easier to layer config files
