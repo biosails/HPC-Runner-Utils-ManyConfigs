@@ -44,16 +44,16 @@
             "MooseX::Types::Path::Tiny" : "0",
             "Path::Tiny" : "0",
             "Try::Tiny" : "0",
-            "namespace::autoclean" : "0",
             "YAML::XS" : "0",
+            "namespace::autoclean" : "0",
             "perl" : "5.010",
             "utf8" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Data::Dumper" : "0",
             "Config::Any" : "0",
+            "Data::Dumper" : "0",
             "File::Path" : "0",
             "File::Spec" : "0",
             "File::Spec::Functions" : "0",
