@@ -81,7 +81,7 @@
          "web" : "https://github.com/biosails/HPC-Runner-Utils-ManyConfigs"
       }
    },
-   "version" : "0.01",
+   "version" : "0.02",
    "x_serialization_backend" : "Cpanel::JSON::XS version 3.0225"
 }
 
