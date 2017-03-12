@@ -5,6 +5,7 @@ requires 'MooseX::App::Role';
 requires 'MooseX::Types::Path::Tiny';
 requires 'Path::Tiny';
 requires 'Try::Tiny';
+requires 'YAML::XS';
 requires 'namespace::autoclean';
 requires 'perl', '5.010';
 requires 'utf8';
@@ -14,6 +15,7 @@ on configure => sub {
 };
 
 on test => sub {
+    requires 'Config::Any';
     requires 'Data::Dumper';
     requires 'File::Path';
     requires 'File::Spec';
@@ -27,6 +29,7 @@ on test => sub {
     requires 'Test::Class::Moose::Load';
     requires 'Test::Class::Moose::Runner';
     requires 'Test::More', '0.96';
+    requires 'YAML::XS';
     requires 'strict';
 };
 
