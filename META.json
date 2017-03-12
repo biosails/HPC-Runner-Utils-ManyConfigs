@@ -60,6 +60,7 @@
             "HPC::Runner::Command" : "0",
             "Moose" : "0",
             "MooseX::App" : "0",
+            "MooseX::App::Command" : "0",
             "Test::Class::Moose" : "0",
             "Test::Class::Moose::Load" : "0",
             "Test::Class::Moose::Runner" : "0",

@@ -6,7 +6,23 @@ with 'HPC::Runner::Command::Utils::ManyConfigs';
 
 option '+config_base' => ( default => '.hpcrunner' );
 
-has 'plugins' => (is => 'rw');
+has 'plugins' => ( is => 'rw' );
+
+package ManyConfigsTest::submit_jobs;
+
+use MooseX::App::Command;
+extends 'ManyConfigTest';
+
+has 'dry_run' => (
+  is => 'rw',
+    isa     => 'Bool',
+    default => 0,
+);
+
+sub run {
+    my $self = shift;
+    print 'hello!';
+}
 
 1;
 
@@ -14,7 +30,7 @@ package TestsFor::HPC::Runner::Command::Utils::ManyConfigs::Test001;
 
 use Moose;
 use Test::Class::Moose;
-use HPC::Runner::Command;
+use ManyConfigTest;
 use Cwd;
 use File::Path qw(make_path remove_tree);
 use Data::Dumper;
@@ -77,6 +93,6 @@ sub test_001 : Tags(new) {
         'config data matches'
     );
 
-    is_deeply(['Slurm'], $test->plugins, 'Conf was applied');
+    is_deeply( ['Slurm'], $test->plugins, 'Conf was applied' );
     ok(1);
 }
