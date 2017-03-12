@@ -16,6 +16,13 @@ use MooseX::Types::Path::Tiny qw/Path Paths AbsPaths AbsFile/;
 use Path::Tiny;
 use Try::Tiny;
 
+option 'no_configs' => (
+    is            => 'rw',
+    isa           => 'Bool',
+    default       => 0,
+    documentation => '--no_configs tells HPC::Runner not to load any configs',
+);
+
 option 'config' => (
     isa           => 'Str',
     is            => 'rw',
@@ -103,6 +110,7 @@ sub BUILD { }
 after 'BUILD' => sub {
     my $self = shift;
 
+    return if $self->no_configs;
     $self->decide_search_configs;
 };
 
