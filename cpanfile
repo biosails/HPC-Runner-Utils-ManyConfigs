@@ -20,7 +20,6 @@ on test => sub {
     requires 'File::Spec::Functions';
     requires 'File::Temp';
     requires 'FindBin';
-    requires 'HPC::Runner::Command';
     requires 'Moose';
     requires 'MooseX::App';
     requires 'MooseX::App::Command';
