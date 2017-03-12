@@ -14,7 +14,7 @@ use MooseX::App::Command;
 extends 'ManyConfigTest';
 
 has 'dry_run' => (
-  is => 'rw',
+    is      => 'rw',
     isa     => 'Bool',
     default => 0,
 );

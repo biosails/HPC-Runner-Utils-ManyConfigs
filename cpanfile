@@ -23,6 +23,7 @@ on test => sub {
     requires 'HPC::Runner::Command';
     requires 'Moose';
     requires 'MooseX::App';
+    requires 'MooseX::App::Command';
     requires 'Test::Class::Moose';
     requires 'Test::Class::Moose::Load';
     requires 'Test::Class::Moose::Runner';
