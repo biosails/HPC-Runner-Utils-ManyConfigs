@@ -4,5 +4,5 @@ perl:
   - "5.20"
   - "5.18"
 install:
-   - cpanm -nq --installdeps .
+   - cpanm --notest --installdeps .
    - cpanm --notest IO::Interactive
