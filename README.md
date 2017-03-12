@@ -1,14 +1,15 @@
 # NAME
 
-HPC::Runner::Command::Utils::ManyConfigs - Blah blah blah
+HPC::Runner::Command::Utils::ManyConfigs - Load many layered configs
 
 # SYNOPSIS
 
-    use HPC::Runner::Command::Utils::ManyConfigs;
+    use Moose;
+    with 'HPC::Runner::Command::Utils::ManyConfigs';
 
 # DESCRIPTION
 
-HPC::Runner::Command::Utils::ManyConfigs is
+HPC::Runner::Command::Utils::ManyConfigs are just some helper utilities to make it easier to layer config files
 
 # AUTHOR
 

@@ -1,5 +1,5 @@
 {
-   "abstract" : "Blah blah blah",
+   "abstract" : "Load many layered configs",
    "author" : [
       "Jillian Rowe <jillian.e.rowe@gmail.com>"
    ],
@@ -10,7 +10,7 @@
    ],
    "meta-spec" : {
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
-      "version" : "2"
+      "version" : 2
    },
    "name" : "HPC-Runner-Command-Utils-ManyConfigs",
    "no_index" : {
@@ -37,17 +37,39 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008005"
+            "Config::Any" : "0",
+            "Cwd" : "0",
+            "File::HomeDir" : "0",
+            "MooseX::App::Role" : "0",
+            "MooseX::Types::Path::Tiny" : "0",
+            "Path::Tiny" : "0",
+            "Try::Tiny" : "0",
+            "namespace::autoclean" : "0",
+            "perl" : "5.010",
+            "utf8" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : "0.96"
+            "Data::Dumper" : "0",
+            "File::Path" : "0",
+            "File::Spec" : "0",
+            "File::Spec::Functions" : "0",
+            "File::Temp" : "0",
+            "FindBin" : "0",
+            "HPC::Runner::Command" : "0",
+            "Moose" : "0",
+            "MooseX::App" : "0",
+            "Test::Class::Moose" : "0",
+            "Test::Class::Moose::Load" : "0",
+            "Test::Class::Moose::Runner" : "0",
+            "Test::More" : "0.96",
+            "strict" : "0"
          }
       }
    },
    "release_status" : "stable",
    "version" : "0.01",
-   "x_serialization_backend" : "JSON::XS version 3.02"
+   "x_serialization_backend" : "Cpanel::JSON::XS version 3.0225"
 }
 
