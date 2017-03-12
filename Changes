@@ -1,6 +1,8 @@
 Revision history for HPC-Runner-Command-Utils-ManyConfigs
 
 {{$NEXT}}
+
+0.02  2017-03-12 14:45:02 GST
 	- Bug fix in dependencies
 
 0.01  2017-03-12 10:07:29 GST

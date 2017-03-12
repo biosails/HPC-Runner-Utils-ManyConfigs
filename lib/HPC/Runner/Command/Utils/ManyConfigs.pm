@@ -1,6 +1,6 @@
 package HPC::Runner::Command::Utils::ManyConfigs;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use 5.010;
 use utf8;
