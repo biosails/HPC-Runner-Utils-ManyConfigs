@@ -14,6 +14,8 @@ HPC::Runner::Command::Utils::ManyConfigs - Load many layered configs
 
 HPC::Runner::Command::Utils::ManyConfigs are just some helper utilities to make it easier to layer config files
 
+It is in the HPC::Runner::Command namespace, but it is meant to be portable for any MooseX::App.
+
 # AUTHOR
 
 Jillian Rowe <jillian.e.rowe@gmail.com>
