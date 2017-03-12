@@ -57,7 +57,7 @@ option 'search_path' => (
         map_search_path     => 'map',
         has_search_path     => 'count',
     },
-    documentation => 'Enable a search path for configs. Configs are the home dir and your cwd.'
+    documentation => 'Enable a search path for configs. Default is the home dir and your cwd.'
 );
 
 has 'filter_keys' => (
