@@ -4,5 +4,6 @@ perl:
   - "5.20"
   - "5.18"
 install:
+   - cpanm --notest YAML::XS
    - cpanm --notest --installdeps .
    - cpanm --notest IO::Interactive

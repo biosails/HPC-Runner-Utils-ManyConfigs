@@ -64,6 +64,7 @@
             "Test::Class::Moose::Load" : "0",
             "Test::Class::Moose::Runner" : "0",
             "Test::More" : "0",
+            "YAML::XS" : "0",
             "strict" : "0"
          }
       }

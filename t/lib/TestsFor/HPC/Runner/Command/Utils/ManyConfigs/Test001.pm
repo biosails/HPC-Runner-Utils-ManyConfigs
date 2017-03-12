@@ -35,6 +35,7 @@ use Cwd;
 use File::Path qw(make_path remove_tree);
 use Data::Dumper;
 use File::Spec;
+use YAML::XS;
 use File::Temp;
 
 sub make_test_dir {
