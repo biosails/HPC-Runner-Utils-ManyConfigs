@@ -63,7 +63,8 @@ option 'search_path' => (
         map_search_path     => 'map',
         has_search_path     => 'count',
     },
-    documentation => 'Enable a search path for configs. Default is the home dir and your cwd.'
+    documentation =>
+      'Enable a search path for configs. Default is the home dir and your cwd.'
 );
 
 has 'filter_keys' => (
@@ -104,8 +105,8 @@ has '_config_data' => (
     default   => sub { [] },
 );
 
-sub BUILD {}
-  
+sub BUILD { }
+
 before 'BUILD' => sub {
     my $self = shift;
 
@@ -198,6 +199,7 @@ sub apply_attributes {
             }
             catch {
                 warn 'You tried to assign ' . $key . ' to ' . $value . "\n";
+
                 #TODO Add logging
             };
         }
