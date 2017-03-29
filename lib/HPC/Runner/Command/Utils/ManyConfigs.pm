@@ -6,7 +6,6 @@ use 5.010;
 use utf8;
 
 use namespace::autoclean;
-
 use MooseX::App::Role;
 
 use Config::Any;
@@ -105,9 +104,7 @@ has '_config_data' => (
     default   => sub { [] },
 );
 
-sub BUILD { }
-
-after 'BUILD' => sub {
+before 'BUILD' => sub {
     my $self = shift;
 
     return if $self->no_configs;
