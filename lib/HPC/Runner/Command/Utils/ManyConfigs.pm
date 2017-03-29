@@ -104,6 +104,8 @@ has '_config_data' => (
     default   => sub { [] },
 );
 
+sub BUILD {}
+  
 before 'BUILD' => sub {
     my $self = shift;
 
